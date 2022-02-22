@@ -2,14 +2,14 @@
 
 *,
 *::after,
-*::before{
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     user-select: none;
 }
-
-body{
+/*Geral*/
+body {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -20,7 +20,7 @@ body{
     color: #A0A5A8;
 }
 
-.main{
+.main {
     position: relative;
     width: 1000px;
     min-width: 600px;
@@ -33,7 +33,8 @@ body{
     overflow: hidden;
 }
 
-.container{
+/*Área de Cadastro*/
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +47,7 @@ body{
     transition: 1.25s;
 }
 
-.form{
+.form {
     display: flex;
     justify-content: center;
     align-items:center;
@@ -55,7 +56,7 @@ body{
     height: 100%;
 }
 
-.form__icon{
+.form__icon {
     object-fit: contain;
     width: 30px;
     margin: 0 5px;
@@ -63,13 +64,13 @@ body{
     transition: 0.15;
 }
 
-.form__icon:hover{
+.form__icon:hover {
     opacity: 1;
     transition: 0.15s;
     cursor: pointer;
 }
 
-.form__input{
+.form__input {
     width: 350px;
     height: 40px;
     margin: 4px 0;
@@ -89,7 +90,7 @@ body{
     box-shadow: inset 4px 4px 4px #D1D9E6, inset -4px -4px 4px #F9F9F9;
 }
 
-.form__span{
+.form__span {
     margin-top: 30px;
     margin-bottom: 12px;
 }
@@ -101,7 +102,7 @@ body{
     color: #181818;
 }
 
-.button{
+.button {
     width: 180px;
     height: 50px;
     border-radius: 25px;
@@ -121,3 +122,19 @@ body{
     z-index: 100;
     left: calc(100% - 600px);
 }
+
+/*Área de Login*/
+
+.form__link {
+    color: #181818;
+    font-size: 15px;
+    margin-top: 25px;
+    border-bottom: 1px solid #A0A5A8;
+    line-height: 2;
+}
+
+.b-container {
+    left: calc(100% - 600px);
+    z-index: 0;
+}
+
