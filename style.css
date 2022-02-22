@@ -216,3 +216,35 @@ body {
     line-height: 1.6;
 }
 
+/*Movimentação da pagina*/
+
+.is-gx{
+    animation: is-gx 1.25s;
+}
+
+@keyframes is-gx{
+    0%, 10%, 100%{
+        width: 400px;
+    }
+    30%,
+    50%{
+        width: 500px;
+    }
+}
+
+.is-txr{
+    left: calc(100% - 400px);
+    transition: 1.25s;
+    transform-origin: left;
+}
+
+.is-txl{
+    left: 0;
+    transition: 1.25;
+    transform-origin: right;
+}
+
+.is-z200{
+    z-index: 200;
+    transition: 1.25s;
+}
